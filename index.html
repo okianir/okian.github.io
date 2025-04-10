@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشاوره سایز شورت زنانه | ابزار هوشمند اندازه‌گیری</title>
+    <style>
+        @font-face {
+            font-family: 'Vazir';
+            src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.eot');
+            src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+                 url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.woff') format('woff'),
+                 url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: 'Vazir', sans-serif;
+            background-color: #fff5f7;
+            color: #555;
+            line-height: 1.8;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .main-container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        
+        .size-guide {
+            background-color: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid #ffe8f1;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        h1 {
+            color: #d23369;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #888;
+            font-size: 14px;
+        }
+        
+        .measurement-steps {
+            background-color: #fef2f6;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-right: 4px solid #f8bbd0;
+        }
+        
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        
+        .step-number {
+            background-color: #f06292;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            margin-left: 10px;
+            flex-shrink: 0;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #d23369;
+            font-size: 15px;
+        }
+        
+        input[type="number"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #f0f0f0;
+            border-radius: 10px;
+            font-family: 'Vazir';
+            font-size: 15px;
+            transition: all 0.3s;
+            background-color: #fafafa;
+        }
+        
+        input[type="number"]:focus {
+            border-color: #f8bbd0;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(216, 67, 116, 0.1);
+            background-color: white;
+        }
+        
+        .calculate-btn {
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 10px;
+            font-family: 'Vazir';
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+        
+        .calculate-btn:hover {
+            background-color: #d81b60;
+            transform: translateY(-2px);
+        }
+        
+        .result {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+        }
+        
+        .result-title {
+            color: #e91e63;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .size-value {
+            font-size: 28px;
+            font-weight: bold;
+            color: #d23369;
+        }
+        
+        .size-table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+        
+        .size-table th, .size-table td {
+            border: 1px solid #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .size-table th {
+            background-color: #fce4ec;
+            color: #c2185b;
+        }
+        
+        .highlight {
+            background-color: #fce4ec;
+            font-weight: bold;
+        }
+        
+        .illustration {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .illustration img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="size-guide">
+            <div class="header">
+                <h1>مشاوره هوشمند سایز شورت زنانه</h1>
+                <div class="subtitle">اندازه‌های خود را وارد کنید تا سایز مناسب شما محاسبه شود</div>
+            </div>
+            
+            <div class="measurement-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div>دور کمر را در باریک‌ترین قسمت اندازه بگیرید</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div>دور باسن را در پهن‌ترین قسمت اندازه بگیرید</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div>اندازه‌ها را به دقت در فرم وارد کنید</div>
+                </div>
+            </div>
+            
+            <form id="sizeCalculator">
+                <div class="form-group">
+                    <label for="waist">دور کمر (سانتیمتر)</label>
+                    <input type="number" id="waist" placeholder="مثال: 70" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hips">دور باسن (سانتیمتر)</label>
+                    <input type="number" id="hips" placeholder="مثال: 95" required>
+                </div>
+                
+                <button type="submit" class="calculate-btn">محاسبه سایز من</button>
+            </form>
+            
+            <div id="result" class="result">
+                <div class="result-title">سایز پیشنهادی برای شما:</div>
+                <div id="sizeOutput" class="size-value"></div>
+                
+                <table class="size-table">
+                    <thead>
+                        <tr>
+                            <th>سایز</th>
+                            <th>دور کمر (سانتیمتر)</th>
+                            <th>دور باسن (سانتیمتر)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="sizeXS">
+                            <td>XS</td>
+                            <td>62-66</td>
+                            <td>88-92</td>
+                        </tr>
+                        <tr id="sizeS">
+                            <td>S</td>
+                            <td>66-70</td>
+                            <td>92-96</td>
+                        </tr>
+                        <tr id="sizeM">
+                            <td>M</td>
+                            <td>70-74</td>
+                            <td>96-100</td>
+                        </tr>
+                        <tr id="sizeL">
+                            <td>L</td>
+                            <td>74-78</td>
+                            <td>100-104</td>
+                        </tr>
+                        <tr id="sizeXL">
+                            <td>XL</td>
+                            <td>78-82</td>
+                            <td>104-108</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('sizeCalculator').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // دریافت مقادیر ورودی
+            const waist = parseInt(document.getElementById('waist').value);
+            const hips = parseInt(document.getElementById('hips').value);
+            
+            // محاسبه سایز
+            let size = '';
+            
+            if (waist <= 66 && hips <= 92) {
+                size = 'XS';
+            } else if (waist <= 70 && hips <= 96) {
+                size = 'S';
+            } else if (waist <= 74 && hips <= 100) {
+                size = 'M';
+            } else if (waist <= 78 && hips <= 104) {
+                size = 'L';
+            } else {
+                size = 'XL';
+            }
+            
+            // نمایش نتیجه
+            document.getElementById('sizeOutput').textContent = size;
+            
+            // هایلایت کردن سایز در جدول
+            document.querySelectorAll('.size-table tr').forEach(row => {
+                row.classList.remove('highlight');
+            });
+            document.getElementById('size' + size).classList.add('highlight');
+            
+            // نمایش بخش نتایج
+            document.getElementById('result').style.display = 'block';
+            
+            // اسکرول به سمت نتایج
+            document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
